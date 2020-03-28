@@ -4,7 +4,6 @@ function [ best_found, processing_time, evaluation_number ] = Generational_GA( t
 %       1- 'best_found': The best-found solution by the GA
 %       2- 'processing_time': The time taken to do all the GA operations as
 %       well as the fitness estimation
-%
 
 %setting up default values for the function parameters
 if nargin<11
