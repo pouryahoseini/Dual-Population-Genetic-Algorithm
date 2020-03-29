@@ -6,7 +6,7 @@ Detailes about dual-population genetic algorithm can be found in our published p
 An opportunity in a high speed parallel processing of genetic algorithm (GA) is the ability to pipeline its serial operations, such as selection, reproduction, fitness calculation, and replacement. In the context of steady-state genetic algorithm, selection and replacement take place every iteration. Since they require access to memory at the same time, there is a natural difficulty in parallelizing selection and replacement in steady-state GA. The general goal of the dual-population scheme is to make it possible to perform selection and replacement simultaneously to increase computation speed. It is done by defining two populations with one used for selection and the other for replacement in any iteration, whereas they switch their roles in the next iteration. The pseudo-code of dual-population GA is:
 > **Initialize** two identical populations, with index *i*: &#8704; *i*={0, 1}
 > 
-*i*=0
+> *i*=0
 **While** termination condition not met
 	**Select** two chromosomes from population *i*
 	**Do Crossover** probabilistically
@@ -23,7 +23,7 @@ In a hardware setting, dual-population GA speeds up genetic operations 34% on av
 </p>
 
 ## The code
-The code provides the MATLAB implementation of dual-population GA in two modes, with delete-the-worst and with delete-the-oldest replacement strategies, and some other GA variants for the sake of comparison. Other implemented genetic algorithms are: steady-state, generational, Compact GA, Optimal Individual Monogenetic Algorithm (OIMGA), and Half Sibling and a Clone (HSClone). They are all placed in the *ga* folder. The folder *tests* contains the MATLAB codes to test the implemented genetic algorithm methods and plot the results. They are stored in a separate directory from the files in the *ga* folder for clarity, but to run the test files the files inside the *ga* folder should be present in the working directory as well. The test fitness functions can be seen [here](docs/Test-functions.pdf).
+The code provides the MATLAB implementation of dual-population GA in two modes, with delete-the-worst and with delete-the-oldest replacement strategies, and some other GA variants for the sake of comparison. Other implemented genetic algorithms are: steady-state, generational, Compact GA, Optimal Individual Monogenetic Algorithm (OIMGA), and Half Sibling and a Clone (HSClone). They are all placed in the *ga* folder. The folder *tests* contains the MATLAB codes to test the implemented genetic algorithm methods and plot the results. They are stored in a separate directory from the files in the *ga* folder for clarity, but to run the test files the files inside the *ga* folder should be present in the working directory as well. The test fitness functions can be seen [here](docs/test-functions.pdf).
 
 # Citation
 You may refer to our work by citing our [paper](https://doi.org/10.1109/CEC.2017.7969612).
