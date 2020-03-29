@@ -3,6 +3,7 @@ This repository hosts MATLAB implementation of dual-population genetic algorithm
 
 ## Description
 Detailes about dual-population genetic algorithm can be found in our published paper ([pdf](docs/CEC-2017.pdf) or [IEEE Xplore](https://doi.org/10.1109/CEC.2017.7969612)).
+
 An opportunity in a high speed parallel processing of genetic algorithm (GA) is the ability to pipeline its serial operations, such as selection, reproduction, fitness calculation, and replacement. In the context of steady-state genetic algorithm, selection and replacement take place every iteration. Since they require access to memory at the same time, there is a natural difficulty in parallelizing selection and replacement in steady-state GA. The general goal of the dual-population scheme is to make it possible to perform selection and replacement simultaneously to increase computation speed. It is done by defining two populations with one used for selection and the other for replacement in any iteration, whereas they switch their roles in the next iteration. The pseudo-code of dual-population GA is:
 > **Initialize** two identical populations, with index *i*: &#8704; *i*={0, 1}
 >
