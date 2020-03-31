@@ -40,5 +40,8 @@ You may refer to our work by citing our [paper](https://doi.org/10.1109/CEC.2017
 }
 ```
 
+# Developers
+[Pourya Hoseini](https://github.com/pouryahoseini)
+
 # Contact
 I can be reached at hoseini@nevada.unr.edu.
